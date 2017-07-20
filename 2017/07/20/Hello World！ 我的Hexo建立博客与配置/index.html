@@ -13,7 +13,7 @@
 <meta property="og:description" content="前言：最近闲着无聊，搞个博客没事儿吐槽下，自己建站耗时耗力，选择了HEXO来建站，据说生成静态网页的速度比Jekyll快（虽然Jekyll官方推荐，主要是相比于Ruby我觉得我更熟悉Node.js,而且Windows用Ruby很蛋疼）。而且一直很喜欢用Markdown写东西，很带感。下面我就是记录下我的过程没有详细的解释哈哈，因为懒。 一步一步来：1. 获取绑定域名：选择了github stud">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://otedbc93y.bkt.clouddn.com/hexo+github.png-Normal">
-<meta property="og:updated_time" content="2017-07-20T19:54:15.203Z">
+<meta property="og:updated_time" content="2017-07-20T20:09:27.707Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello World！ 我的Hexo建立博客与配置">
 <meta name="twitter:description" content="前言：最近闲着无聊，搞个博客没事儿吐槽下，自己建站耗时耗力，选择了HEXO来建站，据说生成静态网页的速度比Jekyll快（虽然Jekyll官方推荐，主要是相比于Ruby我觉得我更熟悉Node.js,而且Windows用Ruby很蛋疼）。而且一直很喜欢用Markdown写东西，很带感。下面我就是记录下我的过程没有详细的解释哈哈，因为懒。 一步一步来：1. 获取绑定域名：选择了github stud">
@@ -23,7 +23,7 @@
     
 
     
-        <link rel="icon" href="/images/logo.ico" />
+        <link rel="icon" href="/css/images/logo.ico" />
     
 
     <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
@@ -257,7 +257,10 @@ CNAME Record: hjmeteor.github.io.
 <p>Hexo常用命令:<br>Hexo npm update hexo-cli -g #升级<br>hexo init#初始化博客 命令简写<br>hexo n “我的博客” == hexo new “我的博客” #新建文章<br>hexo g == hexo generate #生成<br>hexo s == hexo server #启动服务预览<br>hexo d == hexo deploy #部署<br>hexo d -g == hexo generate -&gt; hexo deploy<br>hexo server #Hexo会监视文件变动并自动更新，无须重启服务器<br>hexo server -s #静态模式<br>hexo server -p 5000 #更改端口<br>hexo server -i 192.168.1.1 #自定义 IP<br>hexo clean #清除缓存，若是网页正常情况下可以忽略这条命令</p>
 </blockquote>
 <h2 id="6-更换主题："><a href="#6-更换主题：" class="headerlink" title="6. 更换主题："></a>6. 更换主题：</h2><p>我用的主题是<a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="external"><strong>icarus</strong></a>。安装方法参见他的网站。</p>
-<h2 id="7-添加插件："><a href="#7-添加插件：" class="headerlink" title="7. 添加插件："></a>7. 添加插件：</h2><h2 id="100-注意事项："><a href="#100-注意事项：" class="headerlink" title="100. 注意事项："></a>100. 注意事项：</h2><ol>
+<h2 id="7-添加插件："><a href="#7-添加插件：" class="headerlink" title="7. 添加插件："></a>7. 添加插件：</h2><h2 id="8-各种小改动："><a href="#8-各种小改动：" class="headerlink" title="8. 各种小改动："></a>8. 各种小改动：</h2><ol>
+<li>添加了各种图标</li>
+<li>更换了share插件</li>
+<li><h2 id="100-注意事项："><a href="#100-注意事项：" class="headerlink" title="100. 注意事项："></a>100. 注意事项：</h2></li>
 <li><p>将CNAME文件和README.md文件放入source中，否则一次deploy就会让在根目录的他们消失。CNAME中将我们的网址输入。然后在站点_config.yml文件中添加一行：</p>
 <p> skip_render: README.md</p>
 </li>
@@ -432,7 +435,9 @@ CNAME Record: hjmeteor.github.io.
         <footer id="footer">
     <div class="outer">
         <div id="footer-info" class="inner">
-            &copy; 2017 Jian Hou<br>
+            &copy; 2017 Jian Hou </br>
+            Meteor的博客采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享4.0国际许可证进行许可</a>。转载请注明出处。</br>
+            Meteor’s blog is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>.<br>
             Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
         </div>
     </div>
@@ -471,6 +476,11 @@ CNAME Record: hjmeteor.github.io.
     
         <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
     
+    
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
     
 
 
