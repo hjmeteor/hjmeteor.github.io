@@ -3,17 +3,17 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Hello World！ 我的Hexo建立博客与配置 | Meteor&#39;s Blog</title>
+    <title>Hello World！ 我的Hexo建立博客与配置 | Meteor</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="前言：最近闲着无聊，搞个博客没事儿吐槽下，自己建站耗时耗力，选择了HEXO来建站，据说生成静态网页的速度比Jekyll快（虽然Jekyll官方推荐，主要是相比于Ruby我觉得我更熟悉Node.js,而且Windows用Ruby很蛋疼）。而且一直很喜欢用Markdown写东西，很带感。下面我就是记录下我的过程没有详细的解释哈哈，因为懒。 一步一步来：1. 获取绑定域名：选择了github stud">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hello World！ 我的Hexo建立博客与配置">
 <meta property="og:url" content="http://www.roetem.com/2017/07/20/hello-world/index.html">
-<meta property="og:site_name" content="Meteor&#39;s Blog">
+<meta property="og:site_name" content="Meteor">
 <meta property="og:description" content="前言：最近闲着无聊，搞个博客没事儿吐槽下，自己建站耗时耗力，选择了HEXO来建站，据说生成静态网页的速度比Jekyll快（虽然Jekyll官方推荐，主要是相比于Ruby我觉得我更熟悉Node.js,而且Windows用Ruby很蛋疼）。而且一直很喜欢用Markdown写东西，很带感。下面我就是记录下我的过程没有详细的解释哈哈，因为懒。 一步一步来：1. 获取绑定域名：选择了github stud">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://otedbc93y.bkt.clouddn.com/hexo+github.png-Normal">
-<meta property="og:updated_time" content="2017-07-20T18:27:01.336Z">
+<meta property="og:updated_time" content="2017-07-20T18:39:50.106Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello World！ 我的Hexo建立博客与配置">
 <meta name="twitter:description" content="前言：最近闲着无聊，搞个博客没事儿吐槽下，自己建站耗时耗力，选择了HEXO来建站，据说生成静态网页的速度比Jekyll快（虽然Jekyll官方推荐，主要是相比于Ruby我觉得我更熟悉Node.js,而且Windows用Ruby很蛋疼）。而且一直很喜欢用Markdown写东西，很带感。下面我就是记录下我的过程没有详细的解释哈哈，因为懒。 一步一步来：1. 获取绑定域名：选择了github stud">
@@ -21,7 +21,7 @@
     
 
     
-        <link rel="alternate" href="/" title="Meteor&#39;s Blog" type="application/atom+xml" />
+        <link rel="alternate" href="/" title="Meteor" type="application/atom+xml" />
     
 
     
@@ -54,7 +54,7 @@
         <div class="outer">
             <a href="/" id="logo">
                 <i class="logo"></i>
-                <span class="site-title">Meteor&#39;s Blog</span>
+                <span class="site-title">Meteor</span>
             </a>
             <nav id="main-nav">
                 
@@ -263,6 +263,10 @@ CNAME Record: hjmeteor.github.io.
 <blockquote>
 <p>Hexo常用命令:<br>Hexo npm update hexo-cli -g #升级<br>hexo init#初始化博客 命令简写<br>hexo n “我的博客” == hexo new “我的博客” #新建文章<br>hexo g == hexo generate #生成<br>hexo s == hexo server #启动服务预览<br>hexo d == hexo deploy #部署<br>hexo d -g == hexo generate -&gt; hexo deploy<br>hexo server #Hexo会监视文件变动并自动更新，无须重启服务器<br>hexo server -s #静态模式<br>hexo server -p 5000 #更改端口<br>hexo server -i 192.168.1.1 #自定义 IP<br>hexo clean #清除缓存，若是网页正常情况下可以忽略这条命令</p>
 </blockquote>
+<h2 id="6-更换主题："><a href="#6-更换主题：" class="headerlink" title="6. 更换主题："></a>6. 更换主题：</h2><p>我用的主题是<a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="external"><strong>icarus</strong></a>。安装方法参见他的网站。</p>
+<h2 id="7-添加插件："><a href="#7-添加插件：" class="headerlink" title="7. 添加插件："></a>7. 添加插件：</h2><h2 id="100-注意事项："><a href="#100-注意事项：" class="headerlink" title="100. 注意事项："></a>100. 注意事项：</h2><ol>
+<li>将CNAME文件和README.md文件放入source中，否则一次deploy就会让在根目录的他们消失。CNAME中将我们的网址输入。</li>
+</ol>
 
         
         </div>
